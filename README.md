@@ -22,12 +22,12 @@ Containerization: Docker
 HTTP Requests: requests
 Deployment: ECS, AWS RDS for Postgres, AWS ElastiCache for Redis.
 
-📂 **Project Structure**
-├── app/                                        
-│ ├── __init_.py                         
-│ ├── db.py
+📂 **Project Structure**                          
+├── app/                                                                    
+│ ├── __init_.py                                  
+│ ├── db.py                                        
 │ ├── tasks.py                          
-│ ├── celery_app.py                    
+│ ├── celery_app.py                               
 │ ├── api.py                         
 ├── tests/                      
 ├── Dockerfile                        
