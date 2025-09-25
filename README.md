@@ -23,21 +23,22 @@ HTTP Requests: requests
 Deployment: ECS, AWS RDS for Postgres, AWS ElastiCache for Redis.
 
 📂 **Project Structure**
-├── app/
-│ ├── __init_.py
+├── app/                                        
+│ ├── __init_.py                         
 │ ├── db.py
-│ ├── tasks.py
-│ ├── celery_app.py
-│ ├── api.py
-├── tests/
-├── Dockerfile
-├── docker-compose.yml
-├── pytest.ini
-├── alembic.ini
-├── .env.example
-├── requirements.txt
-├── .gitignore
-└── README.md
+│ ├── tasks.py                          
+│ ├── celery_app.py                    
+│ ├── api.py                         
+├── tests/                      
+├── Dockerfile                        
+├── docker-compose.yml                      
+├── pytest.ini                     
+├── alembic.ini                              
+├── .env.example                                 
+├── requirements.txt                        
+├── .gitignore                             
+└── README.md                        
+
 
 🔗 **Setup Instructions**
 
