@@ -1,9 +1,8 @@
-Test Task
+**Test Task**
 
 This application fetches users, addresses, and credit card information from public APIs and stores them in a PostgreSQL database. The tasks are executed periodically using Celery. The project demonstrates clean code, database relationships, Docker containerization, and testing with Pytest.
 
-Features
-
+**Features**
 - Periodic extraction of users from external API.
 - Periodic extraction of addresses and credit card data from external API.
 - Data is stored in PostgreSQL, with relational links between users, addresses, and credit cards.
@@ -13,7 +12,7 @@ Features
 - Tests using Pytest.
 - Linters were not applied, but the code follows standard Python best practices.
 
-Tech Stack
+📌 **Tech Stack**
 Language & Framework: Python, FastAPI
 Database: PostgreSQL
 Task Queue / Broker: Celery, Redis
@@ -23,9 +22,9 @@ Containerization: Docker
 HTTP Requests: requests
 Deployment: ECS, AWS RDS for Postgres, AWS ElastiCache for Redis.
 
-Project Structure
+📂 **Project Structure**
 ├── app/
-│ ├── **init**.py
+│ ├── __init_.py
 │ ├── db.py
 │ ├── tasks.py
 │ ├── celery_app.py
@@ -40,26 +39,26 @@ Project Structure
 ├── .gitignore
 └── README.md
 
-Setup Instructions
+🔗 **Setup Instructions**
 
 1. Clone the repository
    git clone https://github.com/Olena3K/test-task.git
    cd test_task
 2. Configure environment
    Create a .env file:
-   DATABASE_URL=postgresql://postgres:postgres@db:5432/test_task
+         DATABASE_URL=postgresql://postgres:postgres@db:5432/test_task
    REDIS_URL=redis://redis:6379/0
-3. Build and run Docker containers
-   docker-compose up --build
+3. Build and run Docker containers:
+         docker-compose up --build
    This will start:
    PostgreSQL database
    Redis broker
    FastAPI application
    Celery worker for periodic tasks
-4. Run tests
-   docker exec -it web pytest
+4. Run tests:
+          docker exec -it web pytest
 
-API Endpoints
+📍 **API Endpoints**
 /users/ List users
 /users/{user_id}/addresses List addresses for a specific user
 /users/{user_id}/creditcards List credit cards for a user
