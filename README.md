@@ -9,6 +9,7 @@ This application fetches users, addresses, and credit card information from publ
 - Background task management using Celery with Redis as broker.
 - REST API endpoints via FastAPI to fetch users, addresses, and credit cards.
 - Fully containerized using Docker.
+- Ready to be deployed through AWS ECS.
 - Tests using Pytest.
 - Linters were not applied, but the code follows standard Python best practices.
 
@@ -20,7 +21,6 @@ Testing: Pytest
 Database ORM & Migrations: SQLAlchemy, Alembic
 Containerization: Docker
 HTTP Requests: requests
-Deployment: ECS, AWS RDS for Postgres, AWS ElastiCache for Redis.
 
 📂 **Project Structure**                             
 ├── app/                                                                    
